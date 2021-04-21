@@ -11,11 +11,9 @@
        http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
 ">
 
-    <dubbo:application name="provider"></dubbo:application>
+    <dubbo:application name="consumer"></dubbo:application>
 
     <dubbo:registry address="zookeeper://127.0.0.1:2181"></dubbo:registry>
 
-    <dubbo:protocol name="dubbo" port="20881"></dubbo:protocol>
-
-    <dubbo:annotation package="com.w2x.dubbo_demo.service.impl"></dubbo:annotation>
+    <dubbo:annotation package="com.w2x.dubbo_demo.dubbo_consumer.controller"></dubbo:annotation>
 </beans>
